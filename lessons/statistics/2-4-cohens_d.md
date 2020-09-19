@@ -18,3 +18,6 @@ def CohenEffectSize(group1, group2):
     pooled_var = (n1 * var1 + n2 * var2) / (n1 + n2)
     d = diff / np.sqrt(pooled_var)
     return d
+    
+d =CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
+print('Cohen d', d)
