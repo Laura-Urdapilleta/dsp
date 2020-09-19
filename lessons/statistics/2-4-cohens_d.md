@@ -21,3 +21,9 @@ def CohenEffectSize(group1, group2):
     
 d =CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 print('Cohen d', d)
+
+'''
+For total weight, 'firsts' are 0.088 sd smaller than 'others'. Nevertheless,
+for pregnancy length 'firsts' present a longer pregancy than 'others' by 0.078 sd.
+
+'''
