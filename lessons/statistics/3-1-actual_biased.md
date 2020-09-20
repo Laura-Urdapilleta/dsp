@@ -9,12 +9,13 @@ print(hist)
 pmf = thinkstats2.Pmf(hist, label='actual')
 
 def BiasPmf(pmf, label):
-    """
+
+    '''
     biased distribution we would see if we surveyed the children and asked them how 
     many children under 18 (including themselves) are in their household.
-    """
+    '''
+    
     new_pmf = pmf.Copy(label=label)
-
     for x, p in pmf.Items():
         new_pmf.Mult(x, x)
         
