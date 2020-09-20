@@ -2,15 +2,9 @@
 
 ### Compute the Cohen effect size for this difference. 
 
-def CohenEffectSize(group1, group2):
-    """Computes Cohen's effect size for two groups.
-    
-    group1: Series or DataFrame
-    group2: Series or DataFrame
-    
-    returns: float if the arguments are Series;
-             Series if the arguments are DataFrames
-    """
+def CohenEffectSize(group1, group2):  
+    #Computes Cohen's effect size for two groups.
+   
     diff = group1.mean() - group2.mean()
 
     var1 = group1.var()
@@ -27,7 +21,7 @@ print('Cohen d', d)
 ### How does it compare with the difference in pregnancy length for first babies and others?
 
 '''
-For total weight, 'firsts' are 0.088 sd smaller than 'others'. Nevertheless,
+For total weight, 'firsts' are 0.088 sd smaller than 'others'. Nevertheless,  
 for pregnancy length 'firsts' present a longer pregancy than 'others' by 0.078 sd.
 
 '''
