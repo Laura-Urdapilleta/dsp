@@ -1,5 +1,7 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
+### Compute the Cohen effect size for this difference. 
+
 def CohenEffectSize(group1, group2):
     """Computes Cohen's effect size for two groups.
     
@@ -21,6 +23,8 @@ def CohenEffectSize(group1, group2):
     
 d =CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 print('Cohen d', d)
+
+### How does it compare with the difference in pregnancy length for first babies and others?
 
 '''
 For total weight, 'firsts' are 0.088 sd smaller than 'others'. Nevertheless,
