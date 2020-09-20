@@ -1,5 +1,6 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
+# Create biased distribution
 resp = nsfg.ReadFemResp()
 
 hist = thinkstats2.Hist(resp.numkdhh)
@@ -20,12 +21,12 @@ def BiasPmf(pmf, label):
     new_pmf.Normalize()
     return new_pmf
 
-#Plot the actual and biased distributions
+# Plot the actual and biased distributions
 biased_pmf = BiasPmf(pmf, label='observed')
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf, biased_pmf])
 thinkplot.Config(xlabel='Number of Children', ylabel='PMF')
 
-# compute their means
+# Compute their means
 print('Actual mean', pmf.Mean())
 print('Observed mean', biased_pmf.Mean())
